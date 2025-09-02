@@ -1,11 +1,15 @@
 [build]
-  publish = "dist"
+  # Carpeta de salida por defecto en React
+  publish = "build"
+  # Comando de compilación
   command = "npm run build"
 
 [[redirects]]
+  # Redirección universal para que funcionen las rutas (SPA)
   from = "/*"
   to = "/index.html"
   status = 200
 
 [build.environment]
+  # Versión recomendada de Node
   NODE_VERSION = "18"
